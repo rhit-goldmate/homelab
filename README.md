@@ -1,5 +1,5 @@
 # Cybersecurity Home Lab
-This project goes over the different tools used to create a homelab. You can view the network topology for the project in the homelab-network.pdf file. I will be using these repository to store files for all of my projects that I'm completing using my homelab. Below, I will give an overview of the homelab and links to resources so you can create a similar homelab yourself.
+This project goes over the different tools used to create a homelab. You can view the network topology for the project in the homelab-network.pdf file. I will be using these repository to store files for all of my projects that I'm completing using my homelab. Below, I will give an overview of the homelab and links to resources so you can create a similar homelab yourself. I recommend following all of the tutorials posted in order, though I may not link them all in order.
 ***
 ![Homelab Network Topology](homelab-network.png)
 ***
@@ -16,4 +16,12 @@ The links below will direct you to the website I referenced when setting up my n
 - [Part 1: Project Overview & Installing VirtualBox](https://blog.davidvarghese.dev/posts/building-home-lab-part-1/)
 - [Part 2: pfSense Setup & Configuration](https://blog.davidvarghese.dev/posts/building-home-lab-part-2/)
 
-## Management VMs
+## LAN: Management VMs
+This part of the network consists of the Kali Linux VM. It is used for managing the homelab, as it is on the LAN network. While setting up the homelab, I used my Kali VM to access the web UI of my pfSense firewall and router, and I was able to manage it from there including assigning firwall rules to block other VMs from accessing certain subnets / the Internet.
+> NOTE: You can download the Kali Linux VM image [here](https://www.kali.org/get-kali/#kali-installer-images), it is ~4GB in size
+
+### Step-by-step: 
+The link below will direct you to the website I referenced when setting up my Kali Linux VM:
+- [Part 3: Kali Linux Setup](https://blog.davidvarghese.dev/posts/building-home-lab-part-3/)
+
+## Cyber Range
