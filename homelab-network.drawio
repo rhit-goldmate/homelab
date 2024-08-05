@@ -329,7 +329,7 @@
         <mxCell id="FnHoCbj98JzVe04_ML1R-157" value="&lt;b&gt;ISOLATED&lt;/b&gt;&lt;div&gt;vtnet4 (OPT 3)&lt;/div&gt;&lt;div&gt;Internal Network (LAN 3)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="FnHoCbj98JzVe04_ML1R-151">
           <mxGeometry y="340" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FnHoCbj98JzVe04_ML1R-161" value="&lt;h1&gt;&lt;span style=&quot;background-color: rgb(166, 128, 184);&quot;&gt;&lt;font color=&quot;#f8ebff&quot;&gt;Cybersecurity Homelab Network Diagram&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;strokeColor=#A680B8;fillColor=#A680B8;" vertex="1" parent="1">
+        <mxCell id="FnHoCbj98JzVe04_ML1R-161" value="&lt;h1&gt;&lt;span style=&quot;background-color: rgb(166, 128, 184);&quot;&gt;&lt;font color=&quot;#f8ebff&quot;&gt;Home Lab Network Topology&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;strokeColor=#A680B8;fillColor=#A680B8;" vertex="1" parent="1">
           <mxGeometry x="300" y="10" width="500" height="60" as="geometry" />
         </mxCell>
       </root>
