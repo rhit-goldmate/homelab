@@ -1,5 +1,5 @@
 # Cybersecurity Home Lab
-This project goes over the different tools used to create a homelab. You can view the network topology for the project in the homelab-network.pdf file. I will be using these repository to store files for all of my projects that I'm completing using my homelab. Below, I will give an overview of the homelab and links to resources so you can create a similar homelab yourself. I recommend following all of the tutorials posted in order, though I may not link them all in order. I followed the tutorial pretty closely while setting up my lab, found on [David Varghese's Blog: Source Code](https://blog.davidvarghese.dev/).
+This project goes over the different tools used to create a homelab. You can view the network topology for the project in the homelab-network.pdf file. I will be using these repository to store files for all of my projects that I'm completing using my homelab. This lab is capable of red teaming and blue teaming. For example, we can use Kali Linux to attack our Windows server, and then detect that attack using the Splunk instance. There is a lot more that can be done in this lab, and you can learn more by reading below and looking through many of the projects I will be working on. Below, I will give an overview of the homelab and links to resources so you can create a similar homelab yourself. If you plan on following a step-by-step guide, I recommend following all of the tutorials posted in order, though I may not link them all in order. I followed the tutorial pretty closely while setting up my lab, found on [David Varghese's Blog: Source Code](https://blog.davidvarghese.dev/).
 ***
 ![Homelab Network Topology](homelab-network.png)
 ***
@@ -38,15 +38,17 @@ The Active Directory lab contains 3 VMs. The first one is the [Windows 2019 Serv
 - [Part 7: Active Directory Lab Setup (cont.)](https://blog.davidvarghese.dev/posts/building-home-lab-part-7/)
 ***
 ## Malware Analysis
-
+The Malware Analysis lab contains 2 VMs. The first one is FlareVM and the second is REMnux. Both of these VMs are preloaded with malware analysis tools for things like reverse engineering. Flare VM has a collection of scripts used to automate the installation of many malware analysis tools for Windows machines. Whereas REMnux, is a malware analysis toolkit for Linux machines. With both of these VMs you will be able to explore many types of malware on different machine types. 
 
 ### Step-by-step:
 - [Part 8: Malware Analysis Lab Setup](https://blog.davidvarghese.dev/posts/building-home-lab-part-7/)
 ***
 ## Security VMs
-
+There are two Security VMs in this homelab. Tsurugi Linux is the first, and is a large digital forensics VM (DFIR). Splunk is the other security tool, running on an Ubuntu VM. This instance of Splunk Enterprise runs on this VM, and you can install a Splunk Universal Forwarder on your Windows 2019 Server from the Active Directory Lab. By doing this, the Splunk instance is able to collect local event logs from the Windows machine.
+> NOTE: You need an account to download Splunk Enterprise, and it is a free trial for 60 days. You need to take a snapshot of the "fresh install" of the VM in order to restore the VM back to this stage after the trial expires, and you will be good for another 60 days.
 
 ### Step-by-step:
 - [Part 9: Tsurugi Linux Setup](https://blog.davidvarghese.dev/posts/building-home-lab-part-9/)
 - [Part 10: Splunk Setup](https://blog.davidvarghese.dev/posts/building-home-lab-part-10/)
+> NOTE: There is a Part 11 on the Blog for a step-by-step process on how to get malware files for analysis into the malware analysis lab. Since it is isolated from the network, you can do this through SSH from the Tsurugi Linux machine
 ***
